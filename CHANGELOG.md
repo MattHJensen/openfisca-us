@@ -5,6 +5,99 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.75.2] - 2022-06-17 16:36:16
+
+### Fixed
+
+- Payroll taxable wages deduct pension contributions rather than adding them.
+- Market income includes missing capital gains, farm, illicit and rental income.
+
+## [0.75.1] - 2022-06-16 16:58:09
+
+### Changed
+
+- Replace `phaseout` with `phase_out` or `phase-out` in variables and text.
+- Reorganize variables into their own files.
+
+## [0.75.0] - 2022-06-16 16:28:07
+
+### Added
+
+- Basic income amounts for young children and young adults.
+- Flat tax on AGI.
+
+### Fixed
+
+- Three-digit zipcodes are generated with a fixed seed.
+- Housing subsidies correctly included in benefits.
+
+## [0.74.2] - 2022-06-15 21:45:58
+
+### Fixed
+
+- A bug causing the CDCC to have negative relevant expenses.
+
+## [0.74.1] - 2022-06-13 21:56:08
+
+### Fixed
+
+- Childcare expenses are now correctly loaded from the CPS.
+
+## [0.74.0] - 2022-06-13 15:06:03
+
+### Added
+
+- New York State household credit.
+
+## [0.73.2] - 2022-06-12 20:17:09
+
+### Fixed
+
+- Point `cdcc_refund` to `cdcc` not the deprecated `c33200`.
+
+## [0.73.1] - 2022-06-10 13:24:12
+
+### Fixed
+
+- A bug causing itemisation logic to fail.
+
+## [0.73.0] - 2022-06-09 03:20:13
+
+### Added
+
+- Housing assistance and dependent variables.
+
+## [0.72.3] - 2022-06-08 10:45:48
+
+### Changed
+
+- Breakdowns always specified as a list.
+
+## [0.72.2] - 2022-06-08 05:07:17
+
+### Added
+
+- Metadata for MA policy.
+
+## [0.72.1] - 2022-06-07 20:27:48
+
+### Fixed
+
+- Deduct government retirement contributions from MA taxable income on a per-person basis.
+
+## [0.72.0] - 2022-06-07 18:04:31
+
+### Added
+
+- New York State EITC.
+- Longer history for the Massachusetts rental tax deduction.
+
+## [0.71.2] - 2022-06-07 09:54:21
+
+### Fixed
+
+- Medicaid benefit value per state.
+
 ## [0.71.1] - 2022-06-06 16:15:48
 
 ### Changed
@@ -971,6 +1064,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 
 
+[0.75.2]: https://github.com/PolicyEngine/openfisca-us/compare/0.75.1...0.75.2
+[0.75.1]: https://github.com/PolicyEngine/openfisca-us/compare/0.75.0...0.75.1
+[0.75.0]: https://github.com/PolicyEngine/openfisca-us/compare/0.74.2...0.75.0
+[0.74.2]: https://github.com/PolicyEngine/openfisca-us/compare/0.74.1...0.74.2
+[0.74.1]: https://github.com/PolicyEngine/openfisca-us/compare/0.74.0...0.74.1
+[0.74.0]: https://github.com/PolicyEngine/openfisca-us/compare/0.73.2...0.74.0
+[0.73.2]: https://github.com/PolicyEngine/openfisca-us/compare/0.73.1...0.73.2
+[0.73.1]: https://github.com/PolicyEngine/openfisca-us/compare/0.73.0...0.73.1
+[0.73.0]: https://github.com/PolicyEngine/openfisca-us/compare/0.72.3...0.73.0
+[0.72.3]: https://github.com/PolicyEngine/openfisca-us/compare/0.72.2...0.72.3
+[0.72.2]: https://github.com/PolicyEngine/openfisca-us/compare/0.72.1...0.72.2
+[0.72.1]: https://github.com/PolicyEngine/openfisca-us/compare/0.72.0...0.72.1
+[0.72.0]: https://github.com/PolicyEngine/openfisca-us/compare/0.71.2...0.72.0
+[0.71.2]: https://github.com/PolicyEngine/openfisca-us/compare/0.71.1...0.71.2
 [0.71.1]: https://github.com/PolicyEngine/openfisca-us/compare/0.71.0...0.71.1
 [0.71.0]: https://github.com/PolicyEngine/openfisca-us/compare/0.70.3...0.71.0
 [0.70.3]: https://github.com/PolicyEngine/openfisca-us/compare/0.70.2...0.70.3
